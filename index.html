@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10 napos online edzésprogram</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #0d0d0d;
+            color: #e6ffe6;
+            font-family: Arial, sans-serif;
+        }
+
+        /* NAVBAR (ha kell később kibővítjük) */
+        nav {
+            background-color: #111;
+            padding: 20px;
+            text-align: center;
+            font-size: 18px;
+            color: #57ff57;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: bold;
+        }
+
+        /* GLOW BOXOK */
+        .box {
+            background-color: #111;
+            border: 1px solid #00ff66;
+            padding: 40px 30px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px #00ff66;
+            max-width: 900px;
+            margin: 40px auto;
+        }
+
+        h1, h2 {
+            color: #57ff57;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        p, li {
+            font-size: 18px;
+            line-height: 1.7;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        ul li::before {
+            content: "✔ ";
+            color: #57ff57;
+        }
+
+        /* GOMBOK */
+        .btn {
+            display: inline-block;
+            background-color: #00ff66;
+            color: #000;
+            font-weight: bold;
+            padding: 15px 30px;
+            border-radius: 10px;
+            text-decoration: none;
+            transition: 0.2s;
+            font-size: 20px;
+            box-shadow: 0 0 10px #00ff66;
+        }
+
+        .btn:hover {
+            background-color: #00cc55;
+            box-shadow: 0 0 20px #00ff66;
+        }
+
+        /* FORM */
+        form input {
+            width: 100%;
+            padding: 15px;
+            font-size: 18px;
+            margin-bottom: 15px;
+            border: 1px solid #00ff66;
+            border-radius: 10px;
+            background-color: #0f0f0f;
+            color: #e6ffe6;
+        }
+
+        form button {
+            width: 100%;
+            padding: 15px;
+            font-size: 20px;
+            background-color: #00ff66;
+            color: #000;
+            border: none;
+            border-radius: 10px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.2s;
+            box-shadow: 0 0 10px #00ff66;
+        }
+
+        form button:hover {
+            background-color: #00cc55;
+            box-shadow: 0 0 20px #00ff66;
+        }
+
+    </style>
+</head>
+<body>
+
+<nav>ONLINE EDZÉSPROGRAM</nav>
+
+<!-- HERO -->
+<div class="box">
+    <h1>10 napos otthoni edzésprogram</h1>
+    <p style="text-align:center; font-size:20px;">
+        Kezdd el végre az edzést otthon, eszközök nélkül – egy INGYENES, egyszerű, követhető programmal!
+    </p>
+    <div style="text-align:center; margin-top:30px;">
+        <a href="#jelentkezes" class="btn">Csatlakozom</a>
+    </div>
+</div>
+
+<!-- KINEK KÉSZÜLT? -->
+<div class="box">
+    <h2>Neked készült, ha:</h2>
+    <ul>
+        <li>Szeretnéd végre elkezdeni az edzést</li>
+        <li>Otthon, egyszerűen, eszközök nélkül szeretnél edzeni</li>
+        <li>Biztonságos, kezdőbarát, követhető programra vágysz</li>
+        <li>Több energiát, jobb közérzetet szeretnél</li>
+        <li>Kell valaki, aki motivál és vezet</li>
+    </ul>
+</div>
+
+<!-- PROGRAM -->
+<div class="box">
+    <h2>A program tartalma:</h2>
+    <ul>
+        <li>10 napos kezdő otthoni edzéssorozat</li>
+        <li>Napi 10–12 perces edzések</li>
+        <li>30 napos szokáskövető</li>
+        <li>Mindennapos motiváció</li>
+		<li>Étkezési útmutató</li>
+    </ul>
+    <div style="text-align:center; margin-top:30px;">
+        <a href="#jelentkezes" class="btn">Jelentkezem</a>
+    </div>
+</div>
+
+<!-- REGISZTRÁCIÓ -->
+<div class="box" id="jelentkezes">
+    <h2>Regisztráció</h2>
+    <form action="https://api.web3forms.com/submit" method="POST">
+
+        <!-- IDE KELL A SAJÁT KULCSOD -->
+        <input type="hidden" name="access_key" value="ACCESS_KEY_IDE">
+
+        <input type="text" name="name" placeholder="Neved" required>
+        <input type="email" name="email" placeholder="Email címed" required>
+
+        <button type="submit">Kérem a programot</button>
+    </form>
+</div>
+
+</body>
+</html>
